@@ -1,4 +1,4 @@
-# **Proyecto-Intro-IA**
+# **Proyecto Microsoft Malware Prediction**
 
 
 ## **Miembros del grupo:**
