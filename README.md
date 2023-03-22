@@ -38,7 +38,8 @@ import json
 data = {"username":"camilocasta58","key":"bf122c383b1a077cf251f3a08ec73ae7"}
 
 with open('kaggle.json', 'w') as file:
-    json.dump(data, file, indent=4)
+   
+   json.dump(data, file, indent=4)
 
 #Acceso a Kaggle
 
@@ -57,5 +58,7 @@ with open('kaggle.json', 'w') as file:
 #Abrir el archivo ZIP
 
 with zipfile.ZipFile('microsoft-malware-prediction.zip', 'r') as zip_ref:
+    
     # Extraer todos los archivos en la carpeta actual
-    zip_ref.extractall('.')
+   
+   zip_ref.extractall('.')
