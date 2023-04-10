@@ -15,50 +15,20 @@
 ## **Datos:**
 Los datos del proyecto vienen de la competición de Kaggle Microsoft Malware Prediction (https://www.kaggle.com/competitions/microsoft-malware-prediction/data) y se pueden obtener si se ejecuta el siguiente código:
 
-    #En primer lugar se importan las librerias necesarias
+    !pip install gdown
 
-    import pandas as pd
+    import gdown
 
-    import numpy as np
+    # Define ID 
+    archivo_id = "1bEmU6l5uMKi3QOmJUgRaCCH_zqt4eZrW"
 
-    import matplotlib.pyplot as plt 
+    # Asigna nombre para el archivo en Colab
+    dtr1 = "train1M.csv"
 
-    import seaborn as sns
+    # Construye el enlace de descarga del archivo
+    enlace_descarga = "https://drive.google.com/uc?id=" + archivo_id
 
-    import random
+    # Descarga el archivo desde el enlace de descarga y lo guarda en Colab
+    gdown.download(enlace_descarga, dtr1, quiet=False)
 
-    import requests
-
-    import zipfile
-
-    import json
-
-    #Posteriormente se concede el acceso a los datos con credencial de cuenta Kaggle
-
-    data = {"username":"camilocasta58","key":"bf122c383b1a077cf251f3a08ec73ae7"}
-
-    with open('kaggle.json', 'w') as file:
-   
-        json.dump(data, file, indent=4)
-
-    #Acceso a Kaggle
-
-    ! pip install kaggle
-
-    #Descarga de los datos
-
-    ! mkdir ~/.kaggle
-
-    ! cp kaggle.json ~/.kaggle/
-
-    ! chmod 600 ~/.kaggle/kaggle.json
-
-    ! kaggle competitions download -c microsoft-malware-prediction
-
-    #Abrir el archivo ZIP
-
-    with zipfile.ZipFile('microsoft-malware-prediction.zip', 'r') as zip_ref:
-    
-    # Extraer todos los archivos en la carpeta actual
-   
-          zip_ref.extractall('.')
+    dtr = pd.read_csv("train1M.csv") 
