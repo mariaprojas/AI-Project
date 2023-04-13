@@ -19,7 +19,7 @@ Los datos del proyecto vienen de la competición de Kaggle Microsoft Malware Pre
 
     import gdown
 
-    # Define ID 
+    # Define ID del archivo en Google Drive
     archivo_id = "1YZwFv4N_9kGtwasrhdQijBhGlFyZjDgu"
 
     # Asigna nombre para el archivo en Colab
@@ -30,5 +30,6 @@ Los datos del proyecto vienen de la competición de Kaggle Microsoft Malware Pre
 
     # Descarga el archivo desde el enlace de descarga y lo guarda en Colab
     gdown.download(enlace_descarga, d1, quiet=False)
-
+    
+    #Lee el archivo y lo almacena en un DataFrame
     d = pd.read_csv("dataset.csv") 
