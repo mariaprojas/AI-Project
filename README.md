@@ -20,15 +20,15 @@ Los datos del proyecto vienen de la competición de Kaggle Microsoft Malware Pre
     import gdown
 
     # Define ID 
-    archivo_id = "1bEmU6l5uMKi3QOmJUgRaCCH_zqt4eZrW"
+    archivo_id = "1YZwFv4N_9kGtwasrhdQijBhGlFyZjDgu"
 
     # Asigna nombre para el archivo en Colab
-    dtr1 = "train1M.csv"
+    d1 = "dataset.csv"
 
     # Construye el enlace de descarga del archivo
     enlace_descarga = "https://drive.google.com/uc?id=" + archivo_id
 
     # Descarga el archivo desde el enlace de descarga y lo guarda en Colab
-    gdown.download(enlace_descarga, dtr1, quiet=False)
+    gdown.download(enlace_descarga, d1, quiet=False)
 
-    dtr = pd.read_csv("train1M.csv") 
+    d = pd.read_csv("dataset.csv") 
