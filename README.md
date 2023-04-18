@@ -39,5 +39,3 @@ Los datos del proyecto vienen de la competición de Kaggle Microsoft Malware Pre
     
     #Lee el archivo y lo almacena en un DataFrame
     d = pd.read_csv("dataset.csv") 
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/mariaprojas/AI-Project/blob/main/01%20-%20exploraci%C3%B3n%20de%20datos.ipynb)
