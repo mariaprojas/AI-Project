@@ -36,3 +36,8 @@ Los datos del proyecto vienen de la competición de Kaggle Microsoft Malware Pre
     d = pd.read_csv("dataset.csv") 
     
  **Nota al margen: Cada notebook tiene este código al inicio, sin embargo, en los documentos de prueba se usa el notebook resultado del preprocesado(dataset2.csv).**
+
+## **Videos:**
+- Entrega 1:
+
+https://youtu.be/gr1bFmMOrwg
