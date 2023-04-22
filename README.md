@@ -12,11 +12,6 @@
   *CC 1036966151*
   
   *Ingeniería civil*
-- Daniela Gómez Correa
-  
-  *CC 1020452607*
-  
-  *Ingeniería ambiental*
 
 ## **Datos:**
 Los datos del proyecto vienen de la competición de Kaggle Microsoft Malware Prediction (https://www.kaggle.com/competitions/microsoft-malware-prediction/data) y se pueden obtener si se ejecuta el siguiente código:
