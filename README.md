@@ -21,10 +21,10 @@ Los datos del proyecto vienen de la competición de Kaggle Microsoft Malware Pre
     import gdown
 
     # Define ID del archivo en Google Drive
-    archivo_id = "1awU-SPr9YEjXorief4_Xf9UYo9IYu12Y"
+    archivo_id = "1tQl5NDSp6TPxqDiUe342dYhC1j8yRg-v"
 
     # Asigna nombre para el archivo en Colab
-    d1 = "dataset.csv"
+    d1 = "dataset_1.csv"
 
     # Construye el enlace de descarga del archivo
     enlace_descarga = "https://drive.google.com/uc?id=" + archivo_id
@@ -33,7 +33,7 @@ Los datos del proyecto vienen de la competición de Kaggle Microsoft Malware Pre
     gdown.download(enlace_descarga, d1, quiet=False)
     
     #Lee el archivo y lo almacena en un DataFrame
-    d = pd.read_csv("dataset.csv") 
+    d = pd.read_csv("dataset_1.csv") 
     
  **Nota al margen: Cada notebook tiene este código al inicio, sin embargo, en los documentos de prueba se usa el notebook resultado del preprocesado(dataset2.csv).**
 
