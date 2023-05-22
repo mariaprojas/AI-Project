@@ -35,7 +35,7 @@ Los datos del proyecto vienen de la competición de Kaggle Microsoft Malware Pre
     #Lee el archivo y lo almacena en un DataFrame
     d = pd.read_csv("dataset_1.csv") 
     
- **Nota al margen: Cada notebook tiene este código al inicio, sin embargo, en los notebook de los modelos se usa el notebook resultado del preprocesado (dataset_2.csv).**
+ **Nota al margen: Cada notebook tiene este código al inicio, sin embargo, en los notebook de los modelos se usa el resultado del preprocesado (dataset_2.zip), y para las pruebas de llenado de datos faltantes, se usa el resultado del preprocesado antes del llenado (dataset_pp.csv)**
 
 ## **Videos:**
 - Entrega 1:
